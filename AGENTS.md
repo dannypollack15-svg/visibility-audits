@@ -1,22 +1,13 @@
-## Development
+# visibility-audits.com
 
-When starting the dev server, use background mode:
+Static marketing + research site. Astro, deployed via Cloudflare Pages.
 
-```
-astro dev --background
-```
+## Rules
+- Server-rendered HTML only. No client-side JS for anything containing words.
+- Content lives in src/content/ as markdown.
+- Every claim in a findings post: date, denominator, method.
+- Standalone-claim test: each sentence must assert something complete out of context.
+- No client name appears in published content before outreach to them concludes.
 
-Manage the background server with `astro dev stop`, `astro dev status`, and `astro dev logs`.
-
-## Documentation
-
-Full documentation: https://docs.astro.build
-
-Consult these guides before working on related tasks:
-
-- [Adding pages, dynamic routes, or middleware](https://docs.astro.build/en/guides/routing/)
-- [Working with Astro components](https://docs.astro.build/en/basics/astro-components/)
-- [Using React, Vue, Svelte, or other framework components](https://docs.astro.build/en/guides/framework-components/)
-- [Adding or managing content](https://docs.astro.build/en/guides/content-collections/)
-- [Adding styles or using Tailwind](https://docs.astro.build/en/guides/styling/)
-- [Supporting multiple languages](https://docs.astro.build/en/guides/internationalization/)
+## Not in scope
+CMS, pricing page, testimonials, newsletter capture, analytics beyond one counter.

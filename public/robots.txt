@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://visibility-audits.com/sitemap-index.xml
