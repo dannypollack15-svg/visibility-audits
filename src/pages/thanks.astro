@@ -1,19 +1,88 @@
 ---
+// src/pages/thanks.astro — Visibility Audits, post-submission confirmation
+// Static output: all copy is in the served HTML. No client JS.
+const title = 'Thanks — Visibility Audits';
+const description = 'Your audit request has been received.';
 ---
+
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Thanks — Visibility Audits</title>
+    <title>{title}</title>
+    <meta name="description" content={description} />
     <meta name="robots" content="noindex" />
-    <style>
-      body { max-width: 42rem; margin: 3rem auto; padding: 0 1.5rem; line-height: 1.6; }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>Got it</h1>
-    <p>We'll be in touch within a day or two.</p>
-    <p><a href="/">Back to the homepage</a></p>
+    <header data-m="navbar" style="display:flex; align-items:center; justify-content:space-between; padding:26px 56px 0;">
+      <a href="/" style="display:block; text-decoration:none;">
+        <img src="/logo.svg" alt="Visibility Audits" style="width:37px; height:26px; display:block;">
+      </a>
+      <nav data-m="nav" style="display:flex; gap:6px; font-size:13px; font-weight:500;">
+        <a href="/" class="nav-link" style="text-decoration:none; padding:8px 18px; border-radius:999px; color:#0D0D0D;">Home</a>
+        <a href="/about" class="nav-link" style="text-decoration:none; padding:8px 18px; border-radius:999px; color:#0D0D0D;">About</a>
+      </nav>
+    </header>
+
+    <div data-m="pad" style="padding:0 56px;">
+      <div data-m="panel" style="margin-top:36px; background:linear-gradient(115deg,#F4F8A6 0%,#EEF5A6 34%,#DCD3EF 76%,#CDBEEA 100%); border-radius:28px; padding:72px 64px 64px; position:relative; overflow:hidden;">
+        <p style="margin:0 0 30px; font-size:11px; font-weight:500; letter-spacing:0.16em; text-transform:uppercase;">Request received</p>
+        <h1 data-m="h1" style="margin:0 0 28px; max-width:15ch; font-size:64px; line-height:1.02; font-weight:700; letter-spacing:-0.03em; text-wrap:balance;">Got it</h1>
+        <p data-m="body" style="margin:0; max-width:52ch; font-size:20px; line-height:1.55; font-weight:300; text-wrap:pretty;">We'll run the first pass on your domain and come back within a day or two with what we find.</p>
+        <img src="/logo.svg" alt="" data-m="heromark" aria-hidden="true" style="position:absolute; right:56px; bottom:52px; width:74px; height:52px;">
+      </div>
+
+      <div data-m="next" style="display:flex; flex-wrap:wrap; gap:14px; padding:40px 0 0;">
+        <a href="/" style="text-decoration:none; background:#0D0D0D; color:#FFFFFF; border-radius:999px; padding:15px 38px; font-size:15px; font-weight:500;" class="send">Back to the homepage</a>
+        <a href="/about" style="text-decoration:none; border:1px solid #0D0D0D; color:#0D0D0D; border-radius:999px; padding:15px 38px; font-size:15px; font-weight:500;" class="ghost">Read about the practice</a>
+      </div>
+    </div>
+
+    <footer data-m="footer" style="margin-top:72px; border-top:1px solid #E4E4E4; padding:26px 56px; display:flex; justify-content:space-between; font-size:13px; font-weight:300; color:#545454;">
+      <span>Visibility Audits</span>
+      <span>visibility-audits.com</span>
+    </footer>
   </body>
 </html>
+
+<style is:global>
+  :root {
+    --ink: #0d0d0d;
+    --yellow: #f4f8a6;
+    --lilac: #cdbeea;
+    --grey: #545454;
+  }
+  body {
+    margin: 0;
+    background: #ffffff;
+    color: var(--ink);
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+  a:hover { color: var(--grey); }
+  a.nav-link { text-decoration: none; }
+  a.nav-link:hover { background: var(--yellow); }
+  a.send:hover { background: #2a2a2a; color: #ffffff; }
+  a.ghost:hover { background: var(--yellow); color: var(--ink); }
+
+  @media (max-width: 600px) {
+    body { overflow-x: hidden; }
+    [data-m="navbar"] { flex-direction: column !important; align-items: flex-start !important; gap: 14px !important; padding: 18px 20px 0 !important; }
+    [data-m="nav"] { flex-wrap: wrap !important; gap: 4px !important; }
+    [data-m="pad"] { padding-left: 20px !important; padding-right: 20px !important; }
+    [data-m="panel"] { padding: 34px 22px 34px !important; border-radius: 18px !important; }
+    [data-m="h1"] { font-size: 40px !important; max-width: none !important; }
+    [data-m="body"] { font-size: 17px !important; }
+    [data-m="heromark"] { position: static !important; display: block !important; margin: 30px 0 0 auto !important; width: 48px !important; height: 34px !important; }
+    [data-m="next"] { padding-top: 28px !important; }
+    [data-m="footer"] { flex-direction: column !important; gap: 6px !important; padding: 22px 20px !important; }
+  }
+</style>
