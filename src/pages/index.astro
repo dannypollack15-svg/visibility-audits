@@ -1,7 +1,10 @@
 ---
-const title = "Visibility Audits — be visible when your buyers are asking AI";
-const description = "We find out where you stand across ChatGPT, Gemini, Claude and Perplexity, fix what's keeping you out of the answer, and prove the fix worked.";
+// src/pages/index.astro — Visibility Audits homepage
+// Static output: every word of copy is in the served HTML. No client JS.
+const title = 'Visibility Audits — AI visibility measurement';
+const description = "Find out where you stand in AI answers, fix what's keeping you out, and prove the fix worked.";
 ---
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -9,106 +12,205 @@ const description = "We find out where you stand across ChatGPT, Gemini, Claude 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <link rel="canonical" href="https://visibility-audits.com/" />
-    <style>
-      body { max-width: 42rem; margin: 3rem auto; padding: 0 1.5rem; line-height: 1.6; }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>Be VISIBLE when your buyers are asking AI</h1>
+<header style="display:flex; align-items:center; justify-content:space-between; padding:26px 56px 0;">
+      <img src="/logo.svg" alt="Visibility Audits" style="width:37px; height:26px; display:block;">
+      <nav style="display:flex; gap:6px; font-size:13px; font-weight:500;">
+        <a href="/" style="text-decoration:none; padding:8px 18px; border-radius:999px; background:#0D0D0D; color:#FFFFFF;">Home</a>
+        <a href="#2a" style="text-decoration:none; padding:8px 18px; border-radius:999px; color:#0D0D0D;" class="nav-link">About</a>
+        <a href="#2a" style="text-decoration:none; padding:8px 18px; border-radius:999px; color:#0D0D0D;" class="nav-link">Research</a>
+        <a href="#2a" style="text-decoration:none; padding:8px 18px; border-radius:999px; color:#0D0D0D;" class="nav-link">Method</a>
+      </nav>
+    </header>
 
-    <p>
-      Your potential buyers have added ChatGPT, Gemini, Claude and Perplexity to how
-      they research a purchase. When one of these engines is asked which vendors to
-      shortlist, it confidently names a handful. If you're not among them, you're not
-      even being considered, and you won't see the loss in your analytics.
-    </p>
+    <div style="padding:0 56px;">
+      <div style="margin-top:36px; background:linear-gradient(115deg,#F4F8A6 0%,#EEF5A6 34%,#DCD3EF 76%,#CDBEEA 100%); border-radius:28px; padding:72px 64px 64px; position:relative; overflow:hidden;">
+        <p style="margin:0 0 30px; font-size:11px; font-weight:500; letter-spacing:0.16em; text-transform:uppercase;">AI visibility measurement</p>
+        <h1 style="margin:0; max-width:15ch; font-size:68px; line-height:1.02; font-weight:700; letter-spacing:-0.025em; text-wrap:balance;">Be <span style="text-transform:uppercase;">visible</span> when your buyers are asking AI</h1>
+        <img src="/logo.svg" alt="" aria-hidden="true" style="position:absolute; right:56px; bottom:52px; width:74px; height:52px;">
+      </div>
 
-    <p>
-      We find out where you stand. Fix what's keeping you out of the answer, and prove
-      the fix worked.
-    </p>
+      <div style="display:flex; flex-direction:column; gap:20px; padding:64px 0 0;">
+        <p style="margin: 0; font-size: 20px; line-height: 1.55; font-weight: 300; text-wrap: pretty">Your potential buyers have added ChatGPT, Gemini, Claude and Perplexity to how they research a purchase. When one of these engines is asked which vendors to shortlist, it confidently names a handful. Being on that list matters more than the traffic numbers suggest. Adobe, measuring more than a trillion visits to US retail sites, found AI-referred traffic converted 42% better because the engine has already done the qualifying. If you're not among the shortlist, you're not even being considered, and you won't see the loss in your analytics.</p><p style="margin: 0; font-size: 20px; line-height: 1.55; font-weight: 700; text-wrap: pretty">We find out where you stand. Fix what's keeping you out of the answer, and prove the fix worked.</p>
+        
+      </div>
 
-    <h2>VISIBILITY is not one problem, it's four</h2>
+      <figure style="margin:72px 0 0;">
+        <div style="background:#0D0D0D; color:#FFFFFF; border-radius:28px; padding:44px 48px 40px; display:grid; grid-template-columns:1fr; gap:28px;">
+          <div style="display:flex; align-items:center; justify-content:space-between; gap:24px;">
+            <p style="margin:0; font-size:11px; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; color:#CDBEEA;">One buyer question, one engine answer</p>
+            <p style="margin:0; font-size:11px; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; color:#545454;">Run 03 · logged</p>
+          </div>
 
-    <p>Before an engine recommends you, four separate things have to happen:</p>
+          <p style="margin:0; align-self:start; justify-self:start; max-width:60ch; background:#FFFFFF; color:#0D0D0D; border-radius:999px 999px 999px 6px; padding:14px 24px; font-size:17px; font-weight:500;">Which vendors should we shortlist?</p>
 
-    <ul>
-      <li>
-        <strong>Retrieved:</strong> The AI engine needs to find your page. This fails
-        when your site turns AI crawlers away, or if your pages get built in the
-        visitor's browser and there is nothing for the engine to read.
-      </li>
-      <li>
-        <strong>Cited:</strong> The engine needs to use your page as a source. This
-        fails when there is nothing on the page that directly answers the question
-        that's being asked.
-      </li>
-      <li>
-        <strong>Named:</strong> Your company needs to appear in the answer itself. In
-        many cases, your page gets used as a source of information, while the answer
-        goes on to recommend someone else.
-      </li>
-      <li>
-        <strong>Recommended:</strong> You want to be one of the vendors the engine
-        actually puts forward. This rung is decided by reviews, analyst coverage and
-        independent write-ups rather than by anything on your own site.
-      </li>
-    </ul>
+          <div style="display:flex; flex-direction:column; gap:14px; max-width:74ch;">
+            <p data-va-anim="1" style="margin:0; font-size:17px; line-height:1.6; font-weight:300; animation:va-in 13s ease-out 0.2s infinite both;">Three vendors come up most consistently across recent write-ups:</p>
+            <ol style="list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:10px;">
+              <li data-va-anim="1" style="display:flex; gap:14px; align-items:baseline; font-size:19px; font-weight:500; animation:va-in 13s ease-out 1.4s infinite both;"><span style="font-size:11px; font-weight:500; letter-spacing:0.14em; color:#545454;">01</span> A competitor you know</li>
+              <li data-va-anim="1" style="display:flex; gap:14px; align-items:baseline; font-size:19px; font-weight:500; animation:va-in 13s ease-out 2.6s infinite both;"><span style="font-size:11px; font-weight:500; letter-spacing:0.14em; color:#545454;">02</span> A competitor you don't</li>
+              <li data-va-anim="1" style="display:flex; gap:14px; align-items:baseline; font-size:19px; font-weight:700; animation:va-in 13s ease-out 4.2s infinite both;"><span style="font-size:11px; font-weight:500; letter-spacing:0.14em; color:#545454;">03</span> <span style="background:linear-gradient(100deg,#F4F8A6,#CDBEEA); color:#0D0D0D; border-radius:8px; padding:2px 12px;">Your company</span></li>
+            </ol>
+            <p data-va-anim="1" style="margin:8px 0 0; font-size:17px; line-height:1.6; font-weight:300; animation:va-in 13s ease-out 5.6s infinite both;">Cited from<span aria-hidden="true" style="display:inline-block; width:9px; height:17px; margin-left:6px; vertical-align:-3px; background:#F4F8A6; animation:va-caret 1.1s step-end infinite;"></span></p>
+            <div data-va-anim="1" style="display:flex; flex-wrap:wrap; gap:10px; animation:va-in 13s ease-out 6.4s infinite both;">
+              <span style="font-size:11px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; border:1px dashed #545454; border-radius:999px; padding:7px 16px; color:#FFFFFF;">yourdomain.com/adr-guide</span>
+              <span style="font-size:11px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; border:1px dashed #545454; border-radius:999px; padding:7px 16px; color:#FFFFFF;">review site listicle</span>
+              <span style="font-size:11px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; border:1px dashed #545454; border-radius:999px; padding:7px 16px; color:#FFFFFF;">analyst write-up</span>
+            </div>
+          </div>
+        </div>
+      </figure>
+    </div>
 
-    <h2>Fix it, prove it, maintain it</h2>
+    <div style="margin-top:88px; background:#FAFAF7; border-top:1px solid #E4E4E4; border-bottom:1px solid #E4E4E4; padding:72px 56px 80px;">
+      <h2 style="margin:0 0 12px; font-size:44px; line-height:1.05; font-weight:700; letter-spacing:-0.025em; max-width:22ch;"><span style="text-transform:uppercase;">Visibility</span> is not one problem, it's four</h2>
+      <p style="margin:0 0 40px; font-size:17px; line-height:1.6; font-weight:300;">Before an engine recommends you, four separate things have to happen:</p>
+      <ol style="list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(4,1fr); gap:16px;">
+        <li style="display:grid; grid-template-rows:330px auto auto; gap:18px; align-content:start;">
+          <div style="height:120px; box-sizing:border-box; align-self:end; border-radius:14px 14px 0 0; background:linear-gradient(180deg,#F4F8A6,#FBFCE0); border:none; display:flex; flex-direction:column; justify-content:space-between; padding:14px 16px 18px;">
+            <span style="font-size:11px; font-weight:500; letter-spacing:0.14em;">01</span>
+            <div aria-hidden="true" style="align-self:end; width:40px; height:40px; border:1.5px dashed #0D0D0D; border-radius:50%; display:flex; align-items:center; justify-content:center;"><div style="width:9px; height:9px; border-radius:50%; background:#0D0D0D;"></div></div>
+          </div>
+          <h3 style="margin:0; font-size:26px; font-weight:700; letter-spacing:-0.015em;">Retrieved</h3>
+          <p style="margin:0; font-size:15px; line-height:1.55; font-weight:400;">The AI engine needs to find your page. This fails when your site turns AI crawlers away, or if your pages get built in the visitor's browser and there is nothing for the engine to read.</p>
+        </li>
+        <li style="display:grid; grid-template-rows:330px auto auto; gap:18px; align-content:start;">
+          <div style="height:190px; box-sizing:border-box; align-self:end; border-radius:14px 14px 0 0; background:linear-gradient(180deg,#EFEFB8,#FBFCE0); border:none; display:flex; flex-direction:column; justify-content:space-between; padding:14px 16px 18px;">
+            <span style="font-size:11px; font-weight:500; letter-spacing:0.14em;">02</span>
+            <div aria-hidden="true" style="align-self:end; width:40px; display:flex; flex-direction:column; gap:5px;"><div style="height:2px; background:#0D0D0D; opacity:0.35;"></div><div style="height:4px; background:#0D0D0D;"></div><div style="height:2px; background:#0D0D0D; opacity:0.35;"></div><div style="height:2px; width:60%; background:#0D0D0D; opacity:0.35;"></div></div>
+          </div>
+          <h3 style="margin:0; font-size:26px; font-weight:700; letter-spacing:-0.015em;">Cited</h3>
+          <p style="margin:0; font-size:15px; line-height:1.55; font-weight:400;">The engine needs to use your page as a source. This fails when there is nothing on the page that directly answers the question that's being asked.</p>
+        </li>
+        <li style="display:grid; grid-template-rows:330px auto auto; gap:18px; align-content:start;">
+          <div style="height:260px; box-sizing:border-box; align-self:end; border-radius:14px 14px 0 0; background:linear-gradient(180deg,#DCD3EF,#F6F4FB); border:none; display:flex; flex-direction:column; justify-content:space-between; padding:14px 16px 18px;">
+            <span style="font-size:11px; font-weight:500; letter-spacing:0.14em;">03</span>
+            <div aria-hidden="true" style="align-self:end; display:flex; align-items:center; gap:8px;"><div style="width:11px; height:11px; border-radius:50%; border:1.5px solid #0D0D0D;"></div><div style="width:17px; height:17px; border-radius:50%; background:#0D0D0D;"></div><div style="width:11px; height:11px; border-radius:50%; border:1.5px solid #0D0D0D;"></div></div>
+          </div>
+          <h3 style="margin:0; font-size:26px; font-weight:700; letter-spacing:-0.015em;">Named</h3>
+          <p style="margin:0; font-size:15px; line-height:1.55; font-weight:400;">Your company needs to appear in the answer itself. In many cases, your page gets used as a source of information, while the answer goes on to recommend someone else.</p>
+        </li>
+        <li style="display:grid; grid-template-rows:330px auto auto; gap:18px; align-content:start;">
+          <div style="height:330px; box-sizing:border-box; align-self:end; border-radius:14px 14px 0 0; background:linear-gradient(180deg,#CDBEEA,#EFEAF8); border:none; display:flex; flex-direction:column; justify-content:space-between; padding:14px 16px 18px;">
+            <span style="font-size:11px; font-weight:500; letter-spacing:0.14em;">04</span>
+            <div aria-hidden="true" style="align-self:end; display:flex; align-items:center; gap:9px;"><div style="width:9px; height:9px; background:#0D0D0D; opacity:0.4; transform:rotate(45deg);"></div><div style="width:18px; height:18px; background:#0D0D0D; transform:rotate(45deg);"></div><div style="width:9px; height:9px; background:#0D0D0D; opacity:0.4; transform:rotate(45deg);"></div></div>
+          </div>
+          <h3 style="margin:0; font-size:26px; font-weight:700; letter-spacing:-0.015em;">Recommended</h3>
+          <p style="margin:0; font-size:15px; line-height:1.55; font-weight:400;">You want to be one of the vendors the engine actually puts forward. This rung is decided by reviews, analyst coverage and independent write-ups rather than by anything on your own site.</p>
+        </li>
+      </ol>
+    </div>
 
-    <p>
-      We restructure your content so engines can extract it, clean up the signals that
-      identify you, open access to the crawlers that matter, and help you build the
-      third-party presence that decides recommendation. Then we find out which of it
-      worked, by holding a set of prompts and pages back untreated. If the treated set
-      moves and the held-back set doesn't, the work caused it. You finish knowing which
-      levers move your numbers, and you're able to pull them without us.
-    </p>
+    <div style="padding:80px 56px 0;">
+      <div style="background:#0D0D0D; color:#FFFFFF; border-radius:28px; padding:60px 64px; display:grid; grid-template-columns:200px 1fr; gap:64px;">
+        <div aria-hidden="true" style="display:flex; flex-direction:column; gap:0; padding-top:14px;">
+          <div style="display:flex; align-items:center; gap:16px;">
+            <div style="width:18px; height:18px; border-radius:50%; background:#F4F8A6; flex:0 0 18px;"></div>
+            <span style="font-size:15px; font-weight:700; letter-spacing:0.02em;">Fix</span>
+          </div>
+          <div style="width:2px; height:38px; margin-left:8px; background:linear-gradient(180deg,#F4F8A6,#E1DFC6);"></div>
+          <div style="display:flex; align-items:center; gap:16px;">
+            <div style="width:18px; height:18px; border-radius:50%; background:#DCD3EF; flex:0 0 18px;"></div>
+            <span style="font-size:15px; font-weight:700; letter-spacing:0.02em;">Prove</span>
+          </div>
+          <div style="width:2px; height:38px; margin-left:8px; background:linear-gradient(180deg,#DCD3EF,#8E7BBB);"></div>
+          <div style="display:flex; align-items:center; gap:16px;">
+            <div style="width:18px; height:18px; border-radius:50%; border:2px dashed #CDBEEA; box-sizing:border-box; flex:0 0 18px;"></div>
+            <span style="font-size:15px; font-weight:700; letter-spacing:0.02em;">Maintain</span>
+          </div>
+        </div>
+        <div>
+        <h2 style="margin:0 0 28px; font-size:40px; line-height:1.1; font-weight:700; letter-spacing:-0.02em; color:#F4F8A6;">Fix it, prove it, maintain it</h2>
+        <p style="margin:0; font-size:19px; line-height:1.65; font-weight:300; max-width:62ch; text-wrap:pretty;">We restructure your content so engines can extract it, clean up the signals that identify you, open access to the crawlers that matter, and help you build the third-party presence that decides recommendation. Then we find out which of it worked, by holding a set of prompts and pages back untreated. If the treated set moves and the held-back set doesn't, the work caused it. You finish knowing which levers move your numbers, and you're able to pull them without us.</p>
+        </div>
+      </div>
+    </div>
 
-    <h2>See where you stand</h2>
+    <div style="margin:56px 56px 0; background:linear-gradient(115deg,#F4F8A6,#DCD3EF 70%,#CDBEEA); border-radius:28px; padding:60px; display:grid; grid-template-columns:0.8fr 1.2fr; gap:56px; align-items:start;">
+      <div>
+        <h2 style="margin:0 0 16px; font-size:40px; line-height:1.05; font-weight:700; letter-spacing:-0.02em; max-width:14ch;">See where you stand</h2>
+        <p style="margin:0; font-size:18px; line-height:1.55; font-weight:400; max-width:30ch;">Tell us your domain and we'll run the first pass, then come back with what we find.</p>
+      </div>
+      <form action="https://api.web3forms.com/submit" method="POST" style="display:grid; grid-template-columns:1fr 1fr; gap:18px 20px;">
+        <input type="hidden" name="access_key" value="a05da0f4-3b48-4d73-94e1-7db8b83b5ad9" />
+        <input type="hidden" name="subject" value="New audit request — visibility-audits.com" />
+        <input type="hidden" name="from_name" value="Visibility Audits" />
+        <input type="hidden" name="redirect" value="https://visibility-audits.com/thanks" />
+        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" /> 
+        <input type="hidden" name="form_source" value="homepage">
+        <input type="hidden" name="page_url" value="">
+        <input type="hidden" name="submitted_at" value="">
+        <label style="display:flex; flex-direction:column; gap:6px; font-size:11px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase;">Name
+          <input type="text" name="name" required="" style="border:1px solid #0D0D0D; border-radius:999px; background:rgba(255,255,255,0.55); padding:12px 18px; font-size:16px; letter-spacing:normal; text-transform:none;">
+        </label>
+        <label style="display:flex; flex-direction:column; gap:6px; font-size:11px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase;">Work email
+          <input type="email" name="email" required="" style="border:1px solid #0D0D0D; border-radius:999px; background:rgba(255,255,255,0.55); padding:12px 18px; font-size:16px; letter-spacing:normal; text-transform:none;">
+        </label>
+        <label style="display:flex; flex-direction:column; gap:6px; font-size:11px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase;">Company website
+          <input type="url" name="website" required="" style="border:1px solid #0D0D0D; border-radius:999px; background:rgba(255,255,255,0.55); padding:12px 18px; font-size:16px; letter-spacing:normal; text-transform:none;">
+        </label>
+        <label style="display:flex; flex-direction:column; gap:6px; font-size:11px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase;"><span style="display:flex; align-items:baseline; gap:6px; white-space:nowrap;">Main competitor <span style="font-weight:300; letter-spacing:0.06em; text-transform:none;">(optional)</span></span>
+          <input type="text" name="competitor" style="border:1px dashed #0D0D0D; border-radius:999px; background:rgba(255,255,255,0.35); padding:12px 18px; font-size:16px; letter-spacing:normal; text-transform:none;">
+        </label>
+        <label style="grid-column:1 / -1; display:flex; flex-direction:column; gap:6px; font-size:11px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase;"><span style="display:flex; align-items:baseline; gap:6px;">What prompted you to get in touch <span style="font-weight:300; letter-spacing:0.06em; text-transform:none;">(optional)</span></span>
+          <textarea name="context" rows="3" style="border:1px dashed #0D0D0D; border-radius:18px; background:rgba(255,255,255,0.35); padding:12px 18px; font-size:16px; letter-spacing:normal; text-transform:none; resize:vertical;"></textarea>
+        </label>
+        <label style="position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden;" aria-hidden="true">Leave this unchecked
+          <input type="checkbox" name="confirm_human" tabindex="-1">
+        </label>
+        <div style="grid-column:1 / -1;">
+          <button type="submit" style="border:none; cursor:pointer; background:#0D0D0D; color:#FFFFFF; border-radius:999px; padding:15px 38px; font-size:15px; font-weight:500;" class="send">Send</button>
+        </div>
+      </form>
+    </div>
 
-    <p>
-      Tell us your domain and we'll run the first pass, then come back with what we
-      find.
-    </p>
-
-    <form action="https://api.web3forms.com/submit" method="POST">
-      <input type="hidden" name="access_key" value="a05da0f4-3b48-4d73-94e1-7db8b83b5ad9" />
-      <input type="hidden" name="subject" value="New audit request — visibility-audits.com" />
-      <input type="hidden" name="from_name" value="Visibility Audits" />
-      <input type="hidden" name="redirect" value="https://visibility-audits.com/thanks" />
-      <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
-
-      <p>
-        <label for="name">Name</label><br />
-        <input type="text" id="name" name="name" required />
-      </p>
-
-      <p>
-        <label for="email">Work email</label><br />
-        <input type="email" id="email" name="email" required />
-      </p>
-
-      <p>
-        <label for="company">Company website</label><br />
-        <input type="text" id="company" name="company" placeholder="example.com" required />
-      </p>
-
-      <p>
-        <label for="competitor">Main competitor (optional)</label><br />
-        <input type="text" id="competitor" name="competitor" />
-      </p>
-
-      <p>
-        <label for="message">What prompted you to get in touch? (optional)</label><br />
-        <textarea id="message" name="message" rows="4"></textarea>
-      </p>
-
-      <p><button type="submit">Send</button></p>
-    </form>
-    <p><a href="/about">About</a></p>
-    <p><a href="mailto:danny@visibility-audits.com">danny@visibility-audits.com</a></p>
+    <footer style="margin-top:56px; border-top:1px solid #E4E4E4; padding:26px 56px; display:flex; justify-content:space-between; font-size:13px; font-weight:300; color:#545454;">
+      <span>Visibility Audits</span>
+      <span>visibility-audits.com</span>
+    </footer>
   </body>
 </html>
+
+<style is:global>
+  :root {
+    --ink: #0d0d0d;
+    --yellow: #f4f8a6;
+    --lilac: #cdbeea;
+    --grey: #545454;
+  }
+  body {
+    margin: 0;
+    background: #ffffff;
+    color: var(--ink);
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+  a:hover { color: var(--grey); }
+  a.nav-link { text-decoration: none; }
+  a.nav-link:hover { background: var(--yellow); }
+  button.send:hover { background: #2a2a2a; }
+  input, textarea, button { font-family: 'Space Grotesk', system-ui, sans-serif; }
+  input:focus-visible, textarea:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+
+  /* answer-engine demonstration — sequencing is delay-only, text is in the HTML */
+  @keyframes va-in {
+    0%, 4%   { opacity: 0; transform: translateY(8px); }
+    12%, 92% { opacity: 1; transform: none; }
+    100%     { opacity: 1; transform: none; }
+  }
+  @keyframes va-caret {
+    0%, 45%   { opacity: 1; }
+    55%, 100% { opacity: 0; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    [data-va-anim] { animation: none !important; opacity: 1 !important; transform: none !important; }
+  }
+</style>
