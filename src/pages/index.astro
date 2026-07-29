@@ -1,7 +1,7 @@
 ---
-// src/pages/index.astro — Visibility Audits homepage
+// src/pages/index.astro - Visibility Audits homepage
 // Static output: every word of copy is in the served HTML. No client JS.
-const title = 'Visibility Audits — AI visibility measurement';
+const title = 'Visibility Audits | AI visibility measurement';
 const description = "Find out where you stand in AI answers, fix what's keeping you out, and prove the fix worked.";
 ---
 
@@ -34,12 +34,56 @@ const description = "Find out where you stand in AI answers, fix what's keeping 
       <div data-m="hero" style="margin-top:36px; background:linear-gradient(115deg,#F4F8A6 0%,#EEF5A6 34%,#DCD3EF 76%,#CDBEEA 100%); border-radius:28px; padding:72px 64px 64px; position:relative; overflow:hidden;">
         <p style="margin:0 0 30px; font-size:11px; font-weight:500; letter-spacing:0.16em; text-transform:uppercase;">AI visibility measurement</p>
         <h1 data-m="h1" style="margin:0; max-width:15ch; font-size:68px; line-height:1.02; font-weight:700; letter-spacing:-0.025em; text-wrap:balance;">Be <span style="text-transform:uppercase;">visible</span> when your buyers are asking AI</h1>
+        <div data-m="herocta" style="padding:40px 0 0;">
+          <a href="#contact" class="cta" style="display:inline-block; text-decoration:none; background:#0D0D0D; color:#FFFFFF; border-radius:999px; padding:15px 38px; font-size:15px; font-weight:500;">See where you stand</a>
+        </div>
         <img src="/logo.svg" alt="" data-m="heromark" aria-hidden="true" style="position:absolute; right:56px; bottom:52px; width:74px; height:52px;">
       </div>
 
       <div data-m="lead" style="display:flex; flex-direction:column; gap:20px; padding:64px 0 0;">
         <p style="margin: 0; font-size: 20px; line-height: 1.55; font-weight: 300; text-wrap: pretty">Your potential buyers have added ChatGPT, Gemini, Claude and Perplexity to how they research a purchase. When one of these engines is asked which vendors to shortlist, it confidently names a handful. Being on that list matters more than the traffic numbers suggest. Adobe, measuring more than a trillion visits to US retail sites, found AI-referred traffic converted 42% better because the engine has already done the qualifying. If you're not among the shortlist, you're not even being considered, and you won't see the loss in your analytics.</p><p style="margin: 0; font-size: 20px; line-height: 1.55; font-weight: 700; text-wrap: pretty">We find out where you stand. Fix what's keeping you out of the answer, and prove the fix worked.</p>
         
+      </div>
+
+      <div data-m="what" style="margin-top:88px;">
+        <div data-m="whatpanel" style="background:#FAFAF7; border:1px solid #E4E4E4; border-radius:28px; padding:56px 64px;">
+          <p style="margin:0 0 26px; font-size:11px; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; color:#545454;">What this is</p>
+          <h2 data-m="h2" style="margin:0 0 24px; font-size:36px; line-height:1.12; font-weight:700; letter-spacing:-0.02em; max-width:34ch; text-wrap:balance;">Visibility Audits measures how AI answer engines describe your company, and proves which changes move it.</h2>
+          <p style="margin:0; font-size:19px; line-height:1.6; font-weight:300; max-width:74ch; text-wrap:pretty;">You get a baseline across four engines, the work to close the gaps, and evidence of which part of that work actually did something.</p>
+        </div>
+
+        <div data-m="whatcols" style="margin-top:16px; display:grid; grid-template-columns:repeat(3,1fr); gap:16px;">
+          <div data-m="whatpanel" style="background:#FAFAF7; border:1px solid #E4E4E4; border-radius:28px; padding:36px 34px;">
+            <p style="margin:0 0 20px; font-size:11px; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; color:#545454;">01</p>
+            <h3 style="margin:0 0 22px; font-size:22px; font-weight:700; letter-spacing:-0.015em;">What I measure</h3>
+            <ul style="list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:12px; font-size:15px; line-height:1.5;">
+              <li>Whether engines name you, or name a competitor instead</li>
+              <li>Which of the four engines you appear on, and where you're absent</li>
+              <li>The sources those answers are actually built from</li>
+              <li>Which rung you're stuck on: retrieved, cited, named, or recommended</li>
+            </ul>
+          </div>
+          <div data-m="whatpanel" style="background:#FAFAF7; border:1px solid #E4E4E4; border-radius:28px; padding:36px 34px;">
+            <p style="margin:0 0 20px; font-size:11px; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; color:#545454;">02</p>
+            <h3 style="margin:0 0 22px; font-size:22px; font-weight:700; letter-spacing:-0.015em;">Who it's for</h3>
+            <ul style="list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:12px; font-size:15px; line-height:1.5;">
+              <li>Companies whose buyers research before they commit</li>
+              <li>Where a competitor at a similar stage is winning the shortlist</li>
+              <li>Teams with nobody in-house on this yet</li>
+              <li>Anyone who's been sold a visibility score and can't act on it</li>
+            </ul>
+          </div>
+          <div data-m="whatpanel" style="background:linear-gradient(160deg,#F4F8A6,#DCD3EF 78%,#CDBEEA); border:none; border-radius:28px; padding:36px 34px;">
+            <p style="margin:0 0 20px; font-size:11px; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; color:#545454;">03</p>
+            <h3 style="margin:0 0 22px; font-size:22px; font-weight:700; letter-spacing:-0.015em;">What you end up with</h3>
+            <ul style="list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:12px; font-size:15px; line-height:1.5;">
+              <li>Content and signals fixed, not just flagged</li>
+              <li>A holdout set left untreated, so movement can be attributed</li>
+              <li>Proof of which changes worked, and which didn't</li>
+              <li>Levers you can keep pulling without me</li>
+            </ul>
+          </div>
+        </div>
       </div>
 
       <figure data-m="figure" style="margin:72px 0 0;">
@@ -140,7 +184,7 @@ const description = "Find out where you stand in AI answers, fix what's keeping 
       </div>
       <form data-m="form" action="https://api.web3forms.com/submit" method="POST" style="display:grid; grid-template-columns:1fr 1fr; gap:18px 20px;">
         <input type="hidden" name="access_key" value="a05da0f4-3b48-4d73-94e1-7db8b83b5ad9" />
-        <input type="hidden" name="subject" value="New audit request — visibility-audits.com" />
+        <input type="hidden" name="subject" value="New audit request: visibility-audits.com" />
         <input type="hidden" name="from_name" value="Visibility Audits" />
         <input type="hidden" name="redirect" value="https://visibility-audits.com/thanks/" />
         <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
@@ -197,10 +241,11 @@ const description = "Find out where you stand in AI answers, fix what's keeping 
   a.nav-link { text-decoration: none; }
   a.nav-link:hover { background: var(--yellow); }
   button.send:hover { background: #2a2a2a; }
+  a.cta:hover { background: #2a2a2a; color: #ffffff; }
   input, textarea, button { font-family: 'Space Grotesk', system-ui, sans-serif; }
   input:focus-visible, textarea:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
 
-  /* answer-engine demonstration — sequencing is delay-only, text is in the HTML */
+  /* answer-engine demonstration: sequencing is delay-only, text is in the HTML */
   @keyframes va-in {
     0%, 4%   { opacity: 0; transform: translateY(8px); }
     12%, 92% { opacity: 1; transform: none; }
@@ -221,9 +266,13 @@ const description = "Find out where you stand in AI answers, fix what's keeping 
     [data-m="pad"] { padding-left: 20px !important; padding-right: 20px !important; }
     [data-m="hero"] { padding: 34px 22px 34px !important; border-radius: 18px !important; }
     [data-m="h1"] { font-size: 34px !important; max-width: none !important; }
+    [data-m="herocta"] { padding-top: 28px !important; }
     [data-m="heromark"] { position: static !important; display: block !important; margin: 30px 0 0 auto !important; width: 48px !important; height: 34px !important; }
     [data-m="lead"] { padding-top: 34px !important; gap: 16px !important; }
     [data-m="lead"] p { font-size: 17px !important; }
+    [data-m="what"] { margin-top: 44px !important; }
+    [data-m="whatcols"] { grid-template-columns: 1fr !important; }
+    [data-m="whatpanel"] { border-radius: 18px !important; padding: 28px 22px !important; }
     [data-m="figure"] { margin-top: 40px !important; }
     [data-m="panel"] { padding: 24px 20px 26px !important; border-radius: 18px !important; gap: 20px !important; }
     [data-m="prompt"] { font-size: 15px !important; padding: 12px 18px !important; }
