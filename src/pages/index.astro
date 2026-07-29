@@ -20,9 +20,9 @@ const description = "Find out where you stand in AI answers, fix what's keeping 
     />
   </head>
   <body>
-<header style="display:flex; align-items:center; justify-content:space-between; padding:26px 56px 0;">
+<header data-m="navbar" style="display:flex; align-items:center; justify-content:space-between; padding:26px 56px 0;">
       <img src="/logo.svg" alt="Visibility Audits" style="width:37px; height:26px; display:block;">
-      <nav style="display:flex; gap:6px; font-size:13px; font-weight:500;">
+      <nav data-m="nav" style="display:flex; gap:6px; font-size:13px; font-weight:500;">
         <a href="/" style="text-decoration:none; padding:8px 18px; border-radius:999px; background:#0D0D0D; color:#FFFFFF;">Home</a>
         <a href="#2a" style="text-decoration:none; padding:8px 18px; border-radius:999px; color:#0D0D0D;" class="nav-link">About</a>
         <a href="#2a" style="text-decoration:none; padding:8px 18px; border-radius:999px; color:#0D0D0D;" class="nav-link">Research</a>
@@ -30,26 +30,26 @@ const description = "Find out where you stand in AI answers, fix what's keeping 
       </nav>
     </header>
 
-    <div style="padding:0 56px;">
-      <div style="margin-top:36px; background:linear-gradient(115deg,#F4F8A6 0%,#EEF5A6 34%,#DCD3EF 76%,#CDBEEA 100%); border-radius:28px; padding:72px 64px 64px; position:relative; overflow:hidden;">
+    <div data-m="pad" style="padding:0 56px;">
+      <div data-m="hero" style="margin-top:36px; background:linear-gradient(115deg,#F4F8A6 0%,#EEF5A6 34%,#DCD3EF 76%,#CDBEEA 100%); border-radius:28px; padding:72px 64px 64px; position:relative; overflow:hidden;">
         <p style="margin:0 0 30px; font-size:11px; font-weight:500; letter-spacing:0.16em; text-transform:uppercase;">AI visibility measurement</p>
-        <h1 style="margin:0; max-width:15ch; font-size:68px; line-height:1.02; font-weight:700; letter-spacing:-0.025em; text-wrap:balance;">Be <span style="text-transform:uppercase;">visible</span> when your buyers are asking AI</h1>
-        <img src="/logo.svg" alt="" aria-hidden="true" style="position:absolute; right:56px; bottom:52px; width:74px; height:52px;">
+        <h1 data-m="h1" style="margin:0; max-width:15ch; font-size:68px; line-height:1.02; font-weight:700; letter-spacing:-0.025em; text-wrap:balance;">Be <span style="text-transform:uppercase;">visible</span> when your buyers are asking AI</h1>
+        <img src="/logo.svg" alt="" data-m="heromark" aria-hidden="true" style="position:absolute; right:56px; bottom:52px; width:74px; height:52px;">
       </div>
 
-      <div style="display:flex; flex-direction:column; gap:20px; padding:64px 0 0;">
+      <div data-m="lead" style="display:flex; flex-direction:column; gap:20px; padding:64px 0 0;">
         <p style="margin: 0; font-size: 20px; line-height: 1.55; font-weight: 300; text-wrap: pretty">Your potential buyers have added ChatGPT, Gemini, Claude and Perplexity to how they research a purchase. When one of these engines is asked which vendors to shortlist, it confidently names a handful. Being on that list matters more than the traffic numbers suggest. Adobe, measuring more than a trillion visits to US retail sites, found AI-referred traffic converted 42% better because the engine has already done the qualifying. If you're not among the shortlist, you're not even being considered, and you won't see the loss in your analytics.</p><p style="margin: 0; font-size: 20px; line-height: 1.55; font-weight: 700; text-wrap: pretty">We find out where you stand. Fix what's keeping you out of the answer, and prove the fix worked.</p>
         
       </div>
 
-      <figure style="margin:72px 0 0;">
-        <div style="background:#0D0D0D; color:#FFFFFF; border-radius:28px; padding:44px 48px 40px; display:grid; grid-template-columns:1fr; gap:28px;">
+      <figure data-m="figure" style="margin:72px 0 0;">
+        <div data-m="panel" style="background:#0D0D0D; color:#FFFFFF; border-radius:28px; padding:44px 48px 40px; display:grid; grid-template-columns:1fr; gap:28px;">
           <div style="display:flex; align-items:center; justify-content:space-between; gap:24px;">
             <p style="margin:0; font-size:11px; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; color:#CDBEEA;">One buyer question, one engine answer</p>
             <p style="margin:0; font-size:11px; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; color:#545454;">Run 03 · logged</p>
           </div>
 
-          <p style="margin:0; align-self:start; justify-self:start; max-width:60ch; background:#FFFFFF; color:#0D0D0D; border-radius:999px 999px 999px 6px; padding:14px 24px; font-size:17px; font-weight:500;">Which vendors should we shortlist?</p>
+          <p data-m="prompt" style="margin:0; align-self:start; justify-self:start; max-width:60ch; background:#FFFFFF; color:#0D0D0D; border-radius:999px 999px 999px 6px; padding:14px 24px; font-size:17px; font-weight:500;">Which vendors should we shortlist?</p>
 
           <div style="display:flex; flex-direction:column; gap:14px; max-width:74ch;">
             <p data-va-anim="1" style="margin:0; font-size:17px; line-height:1.6; font-weight:300; animation:va-in 13s ease-out 0.2s infinite both;">Three vendors come up most consistently across recent write-ups:</p>
@@ -69,36 +69,36 @@ const description = "Find out where you stand in AI answers, fix what's keeping 
       </figure>
     </div>
 
-    <div style="margin-top:88px; background:#FAFAF7; border-top:1px solid #E4E4E4; border-bottom:1px solid #E4E4E4; padding:72px 56px 80px;">
-      <h2 style="margin:0 0 12px; font-size:44px; line-height:1.05; font-weight:700; letter-spacing:-0.025em; max-width:22ch;"><span style="text-transform:uppercase;">Visibility</span> is not one problem, it's four</h2>
+    <div data-m="rungsec" style="margin-top:88px; background:#FAFAF7; border-top:1px solid #E4E4E4; border-bottom:1px solid #E4E4E4; padding:72px 56px 80px;">
+      <h2 data-m="h2" style="margin:0 0 12px; font-size:44px; line-height:1.05; font-weight:700; letter-spacing:-0.025em; max-width:22ch;"><span style="text-transform:uppercase;">Visibility</span> is not one problem, it's four</h2>
       <p style="margin:0 0 40px; font-size:17px; line-height:1.6; font-weight:300;">Before an engine recommends you, four separate things have to happen:</p>
-      <ol style="list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(4,1fr); gap:16px;">
-        <li style="display:grid; grid-template-rows:330px auto auto; gap:18px; align-content:start;">
-          <div style="height:120px; box-sizing:border-box; align-self:end; border-radius:14px 14px 0 0; background:linear-gradient(180deg,#F4F8A6,#FBFCE0); border:none; display:flex; flex-direction:column; justify-content:space-between; padding:14px 16px 18px;">
+      <ol data-m="rungs" style="list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(4,1fr); gap:16px;">
+        <li data-m="rung" style="display:grid; grid-template-rows:330px auto auto; gap:18px; align-content:start;">
+          <div data-m="bar" data-bar="1" style="height:120px; box-sizing:border-box; align-self:end; border-radius:14px 14px 0 0; background:linear-gradient(180deg,#F4F8A6,#FBFCE0); border:none; display:flex; flex-direction:column; justify-content:space-between; padding:14px 16px 18px;">
             <span style="font-size:11px; font-weight:500; letter-spacing:0.14em;">01</span>
             <div aria-hidden="true" style="align-self:end; width:40px; height:40px; border:1.5px dashed #0D0D0D; border-radius:50%; display:flex; align-items:center; justify-content:center;"><div style="width:9px; height:9px; border-radius:50%; background:#0D0D0D;"></div></div>
           </div>
           <h3 style="margin:0; font-size:26px; font-weight:700; letter-spacing:-0.015em;">Retrieved</h3>
           <p style="margin:0; font-size:15px; line-height:1.55; font-weight:400;">The AI engine needs to find your page. This fails when your site turns AI crawlers away, or if your pages get built in the visitor's browser and there is nothing for the engine to read.</p>
         </li>
-        <li style="display:grid; grid-template-rows:330px auto auto; gap:18px; align-content:start;">
-          <div style="height:190px; box-sizing:border-box; align-self:end; border-radius:14px 14px 0 0; background:linear-gradient(180deg,#EFEFB8,#FBFCE0); border:none; display:flex; flex-direction:column; justify-content:space-between; padding:14px 16px 18px;">
+        <li data-m="rung" style="display:grid; grid-template-rows:330px auto auto; gap:18px; align-content:start;">
+          <div data-m="bar" data-bar="2" style="height:190px; box-sizing:border-box; align-self:end; border-radius:14px 14px 0 0; background:linear-gradient(180deg,#EFEFB8,#FBFCE0); border:none; display:flex; flex-direction:column; justify-content:space-between; padding:14px 16px 18px;">
             <span style="font-size:11px; font-weight:500; letter-spacing:0.14em;">02</span>
             <div aria-hidden="true" style="align-self:end; width:40px; display:flex; flex-direction:column; gap:5px;"><div style="height:2px; background:#0D0D0D; opacity:0.35;"></div><div style="height:4px; background:#0D0D0D;"></div><div style="height:2px; background:#0D0D0D; opacity:0.35;"></div><div style="height:2px; width:60%; background:#0D0D0D; opacity:0.35;"></div></div>
           </div>
           <h3 style="margin:0; font-size:26px; font-weight:700; letter-spacing:-0.015em;">Cited</h3>
           <p style="margin:0; font-size:15px; line-height:1.55; font-weight:400;">The engine needs to use your page as a source. This fails when there is nothing on the page that directly answers the question that's being asked.</p>
         </li>
-        <li style="display:grid; grid-template-rows:330px auto auto; gap:18px; align-content:start;">
-          <div style="height:260px; box-sizing:border-box; align-self:end; border-radius:14px 14px 0 0; background:linear-gradient(180deg,#DCD3EF,#F6F4FB); border:none; display:flex; flex-direction:column; justify-content:space-between; padding:14px 16px 18px;">
+        <li data-m="rung" style="display:grid; grid-template-rows:330px auto auto; gap:18px; align-content:start;">
+          <div data-m="bar" data-bar="3" style="height:260px; box-sizing:border-box; align-self:end; border-radius:14px 14px 0 0; background:linear-gradient(180deg,#DCD3EF,#F6F4FB); border:none; display:flex; flex-direction:column; justify-content:space-between; padding:14px 16px 18px;">
             <span style="font-size:11px; font-weight:500; letter-spacing:0.14em;">03</span>
             <div aria-hidden="true" style="align-self:end; display:flex; align-items:center; gap:8px;"><div style="width:11px; height:11px; border-radius:50%; border:1.5px solid #0D0D0D;"></div><div style="width:17px; height:17px; border-radius:50%; background:#0D0D0D;"></div><div style="width:11px; height:11px; border-radius:50%; border:1.5px solid #0D0D0D;"></div></div>
           </div>
           <h3 style="margin:0; font-size:26px; font-weight:700; letter-spacing:-0.015em;">Named</h3>
           <p style="margin:0; font-size:15px; line-height:1.55; font-weight:400;">Your company needs to appear in the answer itself. In many cases, your page gets used as a source of information, while the answer goes on to recommend someone else.</p>
         </li>
-        <li style="display:grid; grid-template-rows:330px auto auto; gap:18px; align-content:start;">
-          <div style="height:330px; box-sizing:border-box; align-self:end; border-radius:14px 14px 0 0; background:linear-gradient(180deg,#CDBEEA,#EFEAF8); border:none; display:flex; flex-direction:column; justify-content:space-between; padding:14px 16px 18px;">
+        <li data-m="rung" style="display:grid; grid-template-rows:330px auto auto; gap:18px; align-content:start;">
+          <div data-m="bar" data-bar="4" style="height:330px; box-sizing:border-box; align-self:end; border-radius:14px 14px 0 0; background:linear-gradient(180deg,#CDBEEA,#EFEAF8); border:none; display:flex; flex-direction:column; justify-content:space-between; padding:14px 16px 18px;">
             <span style="font-size:11px; font-weight:500; letter-spacing:0.14em;">04</span>
             <div aria-hidden="true" style="align-self:end; display:flex; align-items:center; gap:9px;"><div style="width:9px; height:9px; background:#0D0D0D; opacity:0.4; transform:rotate(45deg);"></div><div style="width:18px; height:18px; background:#0D0D0D; transform:rotate(45deg);"></div><div style="width:9px; height:9px; background:#0D0D0D; opacity:0.4; transform:rotate(45deg);"></div></div>
           </div>
@@ -108,8 +108,8 @@ const description = "Find out where you stand in AI answers, fix what's keeping 
       </ol>
     </div>
 
-    <div style="padding:80px 56px 0;">
-      <div style="background:#0D0D0D; color:#FFFFFF; border-radius:28px; padding:60px 64px; display:grid; grid-template-columns:200px 1fr; gap:64px;">
+    <div data-m="pad" style="padding:80px 56px 0;">
+      <div data-m="method" style="background:#0D0D0D; color:#FFFFFF; border-radius:28px; padding:60px 64px; display:grid; grid-template-columns:200px 1fr; gap:64px;">
         <div aria-hidden="true" style="display:flex; flex-direction:column; gap:0; padding-top:14px;">
           <div style="display:flex; align-items:center; gap:16px;">
             <div style="width:18px; height:18px; border-radius:50%; background:#F4F8A6; flex:0 0 18px;"></div>
@@ -127,23 +127,23 @@ const description = "Find out where you stand in AI answers, fix what's keeping 
           </div>
         </div>
         <div>
-        <h2 style="margin:0 0 28px; font-size:40px; line-height:1.1; font-weight:700; letter-spacing:-0.02em; color:#F4F8A6;">Fix it, prove it, maintain it</h2>
+        <h2 data-m="h2" style="margin:0 0 28px; font-size:40px; line-height:1.1; font-weight:700; letter-spacing:-0.02em; color:#F4F8A6;">Fix it, prove it, maintain it</h2>
         <p style="margin:0; font-size:19px; line-height:1.65; font-weight:300; max-width:62ch; text-wrap:pretty;">We restructure your content so engines can extract it, clean up the signals that identify you, open access to the crawlers that matter, and help you build the third-party presence that decides recommendation. Then we find out which of it worked, by holding a set of prompts and pages back untreated. If the treated set moves and the held-back set doesn't, the work caused it. You finish knowing which levers move your numbers, and you're able to pull them without us.</p>
         </div>
       </div>
     </div>
 
-    <div style="margin:56px 56px 0; background:linear-gradient(115deg,#F4F8A6,#DCD3EF 70%,#CDBEEA); border-radius:28px; padding:60px; display:grid; grid-template-columns:0.8fr 1.2fr; gap:56px; align-items:start;">
+    <div data-m="formpanel" style="margin:56px 56px 0; background:linear-gradient(115deg,#F4F8A6,#DCD3EF 70%,#CDBEEA); border-radius:28px; padding:60px; display:grid; grid-template-columns:0.8fr 1.2fr; gap:56px; align-items:start;">
       <div>
-        <h2 style="margin:0 0 16px; font-size:40px; line-height:1.05; font-weight:700; letter-spacing:-0.02em; max-width:14ch;">See where you stand</h2>
+        <h2 data-m="h2" style="margin:0 0 16px; font-size:40px; line-height:1.05; font-weight:700; letter-spacing:-0.02em; max-width:14ch;">See where you stand</h2>
         <p style="margin:0; font-size:18px; line-height:1.55; font-weight:400; max-width:30ch;">Tell us your domain and we'll run the first pass, then come back with what we find.</p>
       </div>
-      <form action="https://api.web3forms.com/submit" method="POST" style="display:grid; grid-template-columns:1fr 1fr; gap:18px 20px;">
+      <form data-m="form" action="https://api.web3forms.com/submit" method="POST" style="display:grid; grid-template-columns:1fr 1fr; gap:18px 20px;">
         <input type="hidden" name="access_key" value="a05da0f4-3b48-4d73-94e1-7db8b83b5ad9" />
         <input type="hidden" name="subject" value="New audit request — visibility-audits.com" />
         <input type="hidden" name="from_name" value="Visibility Audits" />
         <input type="hidden" name="redirect" value="https://visibility-audits.com/thanks" />
-        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" /> 
+        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
         <input type="hidden" name="form_source" value="homepage">
         <input type="hidden" name="page_url" value="">
         <input type="hidden" name="submitted_at" value="">
@@ -171,7 +171,7 @@ const description = "Find out where you stand in AI answers, fix what's keeping 
       </form>
     </div>
 
-    <footer style="margin-top:56px; border-top:1px solid #E4E4E4; padding:26px 56px; display:flex; justify-content:space-between; font-size:13px; font-weight:300; color:#545454;">
+    <footer data-m="footer" style="margin-top:56px; border-top:1px solid #E4E4E4; padding:26px 56px; display:flex; justify-content:space-between; font-size:13px; font-weight:300; color:#545454;">
       <span>Visibility Audits</span>
       <span>visibility-audits.com</span>
     </footer>
@@ -212,5 +212,34 @@ const description = "Find out where you stand in AI answers, fix what's keeping 
   }
   @media (prefers-reduced-motion: reduce) {
     [data-va-anim] { animation: none !important; opacity: 1 !important; transform: none !important; }
+  }
+
+  @media (max-width: 600px) {
+    body { overflow-x: hidden; }
+    [data-m="navbar"] { flex-direction: column !important; align-items: flex-start !important; gap: 14px !important; padding: 18px 20px 0 !important; }
+    [data-m="nav"] { flex-wrap: wrap !important; gap: 4px !important; }
+    [data-m="pad"] { padding-left: 20px !important; padding-right: 20px !important; }
+    [data-m="hero"] { padding: 34px 22px 34px !important; border-radius: 18px !important; }
+    [data-m="h1"] { font-size: 34px !important; max-width: none !important; }
+    [data-m="heromark"] { position: static !important; display: block !important; margin: 30px 0 0 auto !important; width: 48px !important; height: 34px !important; }
+    [data-m="lead"] { padding-top: 34px !important; gap: 16px !important; }
+    [data-m="lead"] p { font-size: 17px !important; }
+    [data-m="figure"] { margin-top: 40px !important; }
+    [data-m="panel"] { padding: 24px 20px 26px !important; border-radius: 18px !important; gap: 20px !important; }
+    [data-m="prompt"] { font-size: 15px !important; padding: 12px 18px !important; }
+    [data-m="rungsec"] { margin-top: 48px !important; padding: 44px 20px 48px !important; }
+    [data-m="h2"] { font-size: 28px !important; }
+    [data-m="rungs"] { grid-template-columns: 1fr !important; gap: 28px !important; }
+    [data-m="rung"] { grid-template-rows: auto auto auto !important; gap: 14px !important; }
+    [data-m="bar"] { height: 60px !important; align-self: stretch !important; border-radius: 0 12px 12px 0 !important; justify-content: space-between !important; flex-direction: row !important; align-items: center !important; padding: 0 16px !important; }
+    [data-m="bar"][data-bar="1"] { width: 40% !important; }
+    [data-m="bar"][data-bar="2"] { width: 60% !important; }
+    [data-m="bar"][data-bar="3"] { width: 80% !important; }
+    [data-m="bar"][data-bar="4"] { width: 100% !important; }
+    [data-m="bar"] > div { align-self: center !important; transform: scale(0.62); transform-origin: right center; }
+    [data-m="method"] { grid-template-columns: 1fr !important; gap: 28px !important; padding: 34px 22px !important; border-radius: 18px !important; }
+    [data-m="formpanel"] { margin: 40px 20px 0 !important; grid-template-columns: 1fr !important; gap: 28px !important; padding: 34px 22px !important; border-radius: 18px !important; }
+    [data-m="form"] { grid-template-columns: 1fr !important; }
+    [data-m="footer"] { flex-direction: column !important; gap: 6px !important; padding: 22px 20px !important; }
   }
 </style>
